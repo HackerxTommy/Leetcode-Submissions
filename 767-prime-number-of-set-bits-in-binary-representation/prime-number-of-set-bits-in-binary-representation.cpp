@@ -4,7 +4,7 @@ class Solution {
 
     constexpr int magic = 665772;
     int ans = 0;
-
+// tc O(n)
     for (unsigned num = left; num <= right; ++num)
       if (magic >> popcount(num) & 1)
         ++ans;
