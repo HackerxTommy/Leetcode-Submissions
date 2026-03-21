@@ -9,11 +9,11 @@ public:
             mpp[s[r]]++;
 
          
-            while (mpp[s[r]] > 1) { //checking  duplicate
+            while (mpp[s[r]] > 1) { //checking  duplicate if freq >1 then shrink the window
                 mpp[s[l]]--;
-                if (mpp[s[l]] == 0) 
+                if (mpp[s[l]] == 0)  //agar freq 0 ho jaye to element ko hata do
                     mpp.erase(s[l]);
-                l++;  
+                l++;   // increase the left pointer
             }
 
             maxlength = max(maxlength, r - l + 1);
