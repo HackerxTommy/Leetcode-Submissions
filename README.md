@@ -12,6 +12,7 @@ This repo contains the  accepted submissions of the leetcode questions done by H
 |  |
 | ------- |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
+| [3902-maximize-spanning-tree-stability-with-upgrades](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/3902-maximize-spanning-tree-stability-with-upgrades) |
 ## Hash Table
 |  |
 | ------- |
@@ -32,4 +33,20 @@ This repo contains the  accepted submissions of the leetcode questions done by H
 |  |
 | ------- |
 | [1716-maximum-non-negative-product-in-a-matrix](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/1716-maximum-non-negative-product-in-a-matrix) |
+## Greedy
+|  |
+| ------- |
+| [3902-maximize-spanning-tree-stability-with-upgrades](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/3902-maximize-spanning-tree-stability-with-upgrades) |
+## Union-Find
+|  |
+| ------- |
+| [3902-maximize-spanning-tree-stability-with-upgrades](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/3902-maximize-spanning-tree-stability-with-upgrades) |
+## Graph Theory
+|  |
+| ------- |
+| [3902-maximize-spanning-tree-stability-with-upgrades](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/3902-maximize-spanning-tree-stability-with-upgrades) |
+## Minimum Spanning Tree
+|  |
+| ------- |
+| [3902-maximize-spanning-tree-stability-with-upgrades](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/3902-maximize-spanning-tree-stability-with-upgrades) |
 <!---LeetCode Topics End-->
