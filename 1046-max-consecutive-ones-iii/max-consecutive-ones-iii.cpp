@@ -11,7 +11,7 @@ public:
             
             if (nums[high]==0) zerocount++;
            
-             while(zerocount>k){
+             if(zerocount>k){
                 //shrink jab tak zerocount<k
                 if(nums[low]==0) zerocount--;
                   low++;
