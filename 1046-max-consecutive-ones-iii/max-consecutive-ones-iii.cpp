@@ -6,8 +6,8 @@ public:
        //variable size window
         
         int n=nums.size();
-        int low=0,zerocount=0, maxlength=0;
-        for(int high=0;high<n;high++){
+        int low=0,high=0,zerocount=0, maxlength=0;
+         while(high<n){
             
             if (nums[high]==0) zerocount++;
            
@@ -18,7 +18,7 @@ public:
                   
              }
             maxlength= max(maxlength,(high-low+1));
-            
+            high++;
         }
         return maxlength;
         
