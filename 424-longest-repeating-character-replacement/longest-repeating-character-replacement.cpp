@@ -2,7 +2,7 @@ class Solution {
 public:
     int characterReplacement(string s, int k) {
         int n=s.size();
-        int low=0,high=0, max_length=0, max_frequency=0;
+        int low=0,high=0, max_length=0, max_frequency=INT_MIN;
         unordered_map<char,int>mpp;
         while(high<n){
             mpp[s[high]]++; //current character ko map mai add karo
