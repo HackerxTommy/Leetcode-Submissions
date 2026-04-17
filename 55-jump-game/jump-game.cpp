@@ -7,10 +7,7 @@ public:
            
             if(i>res) return false;
             res = max(i + nums[i], res);
-           
             
-           
-           
         }
 
        return true;
