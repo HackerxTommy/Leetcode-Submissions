@@ -7,6 +7,7 @@ This repo contains the  accepted submissions of the leetcode questions done by H
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0322-coin-change](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/0322-coin-change) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1716-maximum-non-negative-product-in-a-matrix](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/1716-maximum-non-negative-product-in-a-matrix) |
 ## Binary Search
@@ -30,6 +31,7 @@ This repo contains the  accepted submissions of the leetcode questions done by H
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0322-coin-change](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/0322-coin-change) |
 | [1716-maximum-non-negative-product-in-a-matrix](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/1716-maximum-non-negative-product-in-a-matrix) |
 ## Matrix
 |  |
@@ -51,4 +53,8 @@ This repo contains the  accepted submissions of the leetcode questions done by H
 |  |
 | ------- |
 | [3902-maximize-spanning-tree-stability-with-upgrades](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/3902-maximize-spanning-tree-stability-with-upgrades) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/0322-coin-change) |
 <!---LeetCode Topics End-->
