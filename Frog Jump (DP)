@@ -1,0 +1,34 @@
+class Solution {
+  public:
+   
+int solve(vector<int>&dp, int i, int n,vector<int>&height){
+     //base case
+    
+    if(i>=n-1) return 0;
+    
+    //calculted check
+    if(dp[i]!=-1) return dp[i];
+    
+    //condition check
+    //jump 1 step
+    int s1= abs(height[i]-height[i+1]) + solve(dp, i+1,n,height);
+     
+     // jump 2 step
+     
+     int s2=INT_MAX;
+     if(i+2<n){
+      s2= abs(height[i]-height[i+2]) + solve(dp, i+2, n, height);
+     }
+     
+    return dp[i]=min(s1,s2);
+}
+
+int minCost(vector<int>&height) {
+    int n=height.size();
+    
+     vector<int>dp(n,-1);
+     
+    return solve(dp,0,n,height);
+    
+}
+};
