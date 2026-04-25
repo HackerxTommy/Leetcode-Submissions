@@ -1,6 +1,7 @@
 class Solution {
 public:
-int solve(int i, int prev, vector<vector<int>>&dp, vector<int>&nums){ //using dp without using temp array
+/*
+int solve(int i, int prev, vector<vector<int>>&dp, vector<int>&nums){ //using dp without using temp array (O(n2))
   //base case
   if(i == nums.size()) return 0;
 
@@ -20,8 +21,6 @@ int solve(int i, int prev, vector<vector<int>>&dp, vector<int>&nums){ //using dp
 
 }
 
-
-
     int lengthOfLIS(vector<int>& nums) {
         int n=nums.size();
         vector<vector<int>>dp(n,vector<int>(n+1,-1));
@@ -30,4 +29,44 @@ int solve(int i, int prev, vector<vector<int>>&dp, vector<int>&nums){ //using dp
         return solve(0,-1,dp,nums);
         
     }
+};
+
+*/
+
+//using binary search and greedy approach tc (O(nlogn))
+//using temp array of LIS
+
+int binarysearch(vector<int>& temp, int x) {
+    
+    //using temp array of sorted using x
+    int l=0, r= temp.size()-1;
+    int ans= temp.size();
+    while(l<=r){
+        int mid= l+(r-l)/2;
+        if (temp[mid]>=x){
+            ans=mid;
+           r=mid-1;
+        } else{
+            l= mid+1;
+        }
+    }
+      return ans;
+}
+int lengthOfLIS(vector<int>& nums) {
+    vector<int> temp;
+
+    for (int x : nums) {
+
+        if (temp.empty() || x > temp.back()) { // if temp empty and x bada ho temp ki piche vale element se
+            temp.push_back(x); // simple case 
+        } else {
+            int idx = binarysearch(temp, x);  //else binary search se replace karo element is position
+            temp[idx] = x; // replace
+        }
+    }
+
+    return temp.size();
+}
+
+
 };
