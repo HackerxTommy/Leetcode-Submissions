@@ -15,7 +15,7 @@ public:
         take= 1+ solve(s1,s2,i-1,j-1,dp); //dono ko le lenge
     }
     else{
-        skip = max(solve(s1,s2,i-1,j,dp), solve(s1,s2,i,j-1,dp)); //ek ek karke lenge
+        skip = max(solve(s1,s2,i-1,j,dp), solve(s1,s2,i,j-1,dp)); //ek ek karke lenge means skip
     }
 
     return dp[i][j]=max(skip,take);
@@ -25,7 +25,7 @@ public:
     int longestPalindromeSubseq(string s1) {
        
         string s2=s1;
-        //for palindrone reverse the string s1
+        //for palindrone reverse the string s1 and compare if both string are equal
         reverse(s2.begin(),s2.end());
         
 
