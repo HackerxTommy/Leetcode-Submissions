@@ -10,7 +10,8 @@ public:
     //we cannot rob adjacent houses
     //so we have two choice first rob current  house nums[i] and go to i+2 adjacent
     //second skip current house and goto i+1 ,take max of both
-    return dp[i]= max((nums[i]+solve(i+2,nums)), solve(i+1,nums)); //take(rob) current house and skip current house
+    return dp[i]= max((nums[i]+solve(i+2,nums)),
+     solve(i+1,nums)); //take(rob) current house and skip current house
 
     }
     int rob(vector<int>& nums) {
