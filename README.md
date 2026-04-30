@@ -10,6 +10,7 @@ This repo contains the  accepted submissions of the leetcode questions done by H
 | [0322-coin-change](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/0322-coin-change) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1716-maximum-non-negative-product-in-a-matrix](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/1716-maximum-non-negative-product-in-a-matrix) |
+| [3986-maximum-path-score-in-a-grid](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/3986-maximum-path-score-in-a-grid) |
 ## Binary Search
 |  |
 | ------- |
@@ -33,10 +34,12 @@ This repo contains the  accepted submissions of the leetcode questions done by H
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0322-coin-change](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/0322-coin-change) |
 | [1716-maximum-non-negative-product-in-a-matrix](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/1716-maximum-non-negative-product-in-a-matrix) |
+| [3986-maximum-path-score-in-a-grid](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/3986-maximum-path-score-in-a-grid) |
 ## Matrix
 |  |
 | ------- |
 | [1716-maximum-non-negative-product-in-a-matrix](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/1716-maximum-non-negative-product-in-a-matrix) |
+| [3986-maximum-path-score-in-a-grid](https://github.com/HackerxTommy/Leetcode-Submissions/tree/master/3986-maximum-path-score-in-a-grid) |
 ## Greedy
 |  |
 | ------- |
