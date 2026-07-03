@@ -1,14 +1,14 @@
 class Solution {
 public:
-
+ //using dp cz in recursion got tle
   bool solve(int i,int x, vector<int>&nums, vector<vector<int>>&dp){
     //base cases
         //base cases 
-        if (x==0) return true; //mil gaya 
+        if (x==0) return true; //mil gaya ans
         if (i>=nums.size()) return false; //out of bound
     
     // calculated check
-    if(dp[i][x]!=-1) return dp[i][x];
+    if(dp[i][x]!=-1) return dp[i][x]; // i index x sum
 
     //condition check
     bool take= false;
