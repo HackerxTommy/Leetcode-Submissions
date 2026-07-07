@@ -28,11 +28,17 @@ public:
         int sum= accumulate(nums.begin(),nums.end(),0);
         if (sum < abs(target)) return 0;
         if ((sum + target)%2!=0) return 0;
-        int x= (sum+ target)/2; //cz p+n= sum and p-n= target then after adding them 2p=sum+target then p = (sum+target)/2
+        int x= (sum+ target)/2; //cz p+n= sum and p-n= target then after adding them 2p=sum+target then p = (sum+target)/2 same 2x = sum+target like partition equal subset sum, p and n are +ve and -ve
 
         vector<vector<int>>dp(n,vector<int>(x+1,-1)); 
         return  solve(0,nums,x,target,dp);
 
-        
     }
 };
+ 
+ /*difference from partition equal subset sum
+ Problem	             Return Type	Base Case	            Combine
+Partition Equal Subset Sum	bool	   if(sum==0)return true;	`take
+Count Subsets Sum K	        int	       if(i==n) return sum==0;	take + notTake
+Target Sum	                int	       if(i==n) return sum==0;	take + notTake
+*/
