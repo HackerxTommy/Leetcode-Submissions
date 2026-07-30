@@ -32,7 +32,7 @@ public:
          int n=s1.size()-1; //as 0->n-1
 
          int m=s2.size()-1; //as 0->m-1
-vector<vector<int>>dp(n+1, vector<int>(m+1,-1)); //n+1 and m+1 isliye bcz dp ek aage chalta hai
+        vector<vector<int>>dp(n+1, vector<int>(m+1,-1)); //n+1 and m+1 isliye bcz dp ek aage chalta hai
         return solve(s1, s2,n,m,dp);
         
     }
