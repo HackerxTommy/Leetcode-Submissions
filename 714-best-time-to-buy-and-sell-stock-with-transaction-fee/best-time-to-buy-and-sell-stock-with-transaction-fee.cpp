@@ -1,0 +1,30 @@
+class Solution {
+public:
+     int solve(vector<int>& prices , int idx ,int  buy ,int  fee , int n , vector<vector<int>>& dp ){
+
+        //  base case 
+
+        if( idx >= n) return 0 ; 
+    
+         // calculated check
+        if(dp[idx][buy] != -1) return dp[idx][buy] ;
+
+        // condition check
+
+        if(buy ==1){ // buy 1 hai and sell 0
+            return dp[idx][buy] = max(- prices[idx] + solve( prices , idx +1 , 0 , fee , n , dp) , 0 + solve(prices , idx +1 , 1 , fee , n , dp)) ;  // agar buy karenge toh sell bhi  karna padega, buy karne pe total profit ghatega -prices[i]
+        }
+
+
+        return dp[idx][buy] = max(prices[idx]- fee + solve(prices , idx +1 , 1 , fee , n , dp) , 0 + solve(prices , idx + 1 , 0 , fee , n , dp)) ; // sell pe profit bhadega lekin remove fees prices[i] - fee
+     }
+
+    int maxProfit(vector<int>& prices, int fee) {
+        int n  = prices.size() ;
+
+        vector<vector<int>>dp(n , vector<int>(2 , -1)) ; // 2 isliye due to buy 1 and sell 0 dp[index][buy/sell] buy 1 sell 0
+
+        return solve(prices , 0 , 1 , fee ,n , dp) ;
+        
+    }
+};
