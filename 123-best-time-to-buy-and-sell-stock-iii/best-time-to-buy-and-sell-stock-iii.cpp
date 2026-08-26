@@ -43,7 +43,7 @@ public:
        // maximum number of transactions is k , cap means 1 transaction buy and sell
 
         vector<vector<vector<int>>> dp(n,vector<vector<int>>(2,vector<int>(3 + 1, -1))); //3d dp due to index, buy/sell, no of transaction
-
+        // 3 due to max no of transaction allowed 2 and due to size of backward recursion 2+1 =3
         return solve(0, 1, 2, prices, n, dp);
     }
 };
