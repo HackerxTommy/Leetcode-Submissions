@@ -15,10 +15,10 @@ public:
             slow = slow -> next;
             fast = fast -> next ->next;
              
-             if (  fast == slow) break;
+             if (  fast == slow) break; //cycle formed
         }
         if ( ! (fast && fast-> next) ) return NULL;
-        while( head != slow){
+        while( head != slow){ // after sometime head will also reach start of cycle and so slow too
             head = head ->next;
             slow = slow -> next;
         }
